@@ -5,5 +5,12 @@
     "rating": 8,
     "watched": "2026-05-25",
     "poster": "https://image.tmdb.org/t/p/w500/p4RafgAPk558muOjnBMHhMArjS2.jpg"
+  },
+  {
+    "title": "The Accountant",
+    "year": 2016,
+    "rating": 7,
+    "watched": "2026-05-26",
+    "poster": "https://image.tmdb.org/t/p/w500/fceheXB5fC4WrLVuWJ6OZv9FXYr.jpg"
   }
 ]
