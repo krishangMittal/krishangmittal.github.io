@@ -144,6 +144,48 @@ ul.posts a:hover {
   text-underline-offset: 3px;
 }
 
+/* watching list */
+ul.films {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+ul.films li {
+  display: flex;
+  gap: 1.1rem;
+  margin-bottom: 1.4rem;
+  align-items: center;
+}
+ul.films img {
+  width: 64px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 3px;
+  background: var(--rule);
+  flex-shrink: 0;
+}
+ul.films .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+ul.films .title {
+  font-weight: 500;
+  font-size: 0.98rem;
+  letter-spacing: -0.005em;
+}
+ul.films .meta {
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+ul.films .rating {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 /* blog post body */
 article.post h1 {
   font-size: 1.5rem;
