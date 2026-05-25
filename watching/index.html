@@ -10,7 +10,7 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>k</text></svg>">
   <link rel="stylesheet" href="/style.css">
 </head>
-<body>
+<body class="wide">
   <nav class="site">
     <a href="/">home</a>
     <a href="/blog/">blog</a>
@@ -20,22 +20,13 @@
   <h1>Watching</h1>
   <p class="tag">Films I've recently watched, with ratings out of 10.</p>
 
-  <ul class="films">
-    <li>
-      <img src="https://image.tmdb.org/t/p/w500/p4RafgAPk558muOjnBMHhMArjS2.jpg"
-           alt="Crazy, Stupid, Love. poster"
-           loading="lazy" width="64" height="96">
-      <div class="info">
-        <span class="title">Crazy, Stupid, Love.</span>
-        <span class="meta">2011 · <span class="rating">8/10</span> · watched 2026.05.25</span>
-      </div>
-    </li>
-  </ul>
+  <ul class="films"></ul>
 
   <footer>
     <span>madison → san francisco · 2026</span>
     <span class="visits"></span>
   </footer>
+  <script src="/watching/watching.js" defer></script>
   <script src="/counter.js" defer></script>
 </body>
 </html>
