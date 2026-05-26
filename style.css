@@ -144,8 +144,8 @@ ul.posts a:hover {
   text-underline-offset: 3px;
 }
 
-/* watching grid */
-ul.films {
+/* lately grids (books + films) */
+ul.films, ul.books {
   list-style: none;
   padding: 0;
   margin: 0.5rem 0 0;
@@ -153,13 +153,13 @@ ul.films {
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 1.75rem 1.1rem;
 }
-ul.films li {
+ul.films li, ul.books li {
   list-style: none;
   display: flex;
   flex-direction: column;
 }
-ul.films li::marker { content: ""; }
-ul.films img {
+ul.films li::marker, ul.books li::marker { content: ""; }
+ul.films img, ul.books img {
   width: 100%;
   aspect-ratio: 2 / 3;
   height: auto;
@@ -170,23 +170,23 @@ ul.films img {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
-ul.films li:hover img {
+ul.films li:hover img, ul.books li:hover img {
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
-ul.films .info {
+ul.films .info, ul.books .info {
   display: flex;
   flex-direction: column;
   gap: 0.15rem;
   margin-top: 0.7rem;
 }
-ul.films .title {
+ul.films .title, ul.books .title {
   font-weight: 500;
   font-size: 0.88rem;
   line-height: 1.3;
   letter-spacing: -0.005em;
 }
-ul.films .meta {
+ul.films .meta, ul.books .meta {
   font-family: var(--mono);
   font-size: 0.7rem;
   color: var(--muted);
@@ -195,6 +195,14 @@ ul.films .meta {
 ul.films .rating {
   color: var(--accent);
   font-weight: 600;
+}
+
+p.empty {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  margin: 0.5rem 0 0;
+  font-style: italic;
 }
 
 body.wide {
